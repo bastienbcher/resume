@@ -16,26 +16,18 @@ body {
     -moz-osx-font-smoothing: grayscale;
 	width: 100%;
 	margin: 0px auto;
-	animation-name:FADE;
-	animation-duration:1s;
-	animation-iteration-count:1;
-	transition:ease-in-out;
-}
-
-@keyframes FADE{
-	0%{ opacity: 0;}
-	100%{opacity: 1;}
 }
 
 iframe {
 	border: none;
 }
+
 /* HEADER + MENU */
 header {
     width: 100%;
     position: sticky;
     top: 0;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
     z-index: 1;
      background-color: #fff;
 }
@@ -104,11 +96,11 @@ nav li a:hover {
 .active {
 	  border-bottom: 2px solid #3498db;
 }
+
 /* SECTION 1 */
 .title {
-	max-width: 1200px;
-	margin: 80px auto 0px;
-	padding: 0px 20px;
+	width: 100%;
+    padding: 80px 0 0px;
 }
 
 h1 {
@@ -116,28 +108,42 @@ h1 {
 	font-weight: 200;
 	line-height: 55px;
 	color: #34495e;
+	max-width: 1160px;
+    margin: 0 auto;
+    padding: 0px 20px;
 }
 
+.racing {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 
 /* SECTION 2 CARD GRID */
 
 h2 {
 	font-size: 20px;
 	font-weight: 400;
-	color: #34495e;
+	color: #3498db;
 	margin-bottom: 20px;
 }
 
 #projet {
-	max-width: 1200px;
-	padding: 50px 20px 0px;
-    margin: 0 auto 100px;
+	width: 100%;
+	padding: 30px 20px 100px;
+    margin: 0 auto;
 	display: flex;
 	flex-flow: wrap;
  	flex-direction: row;
  	justify-content: space-between;
 }
 
+.conteneur #about {
+	margin: 0px auto;
+	max-width: 1200px;
+	padding: 0px 20px;
+}
 
 #projet article {
 	width: 48%;
@@ -154,7 +160,9 @@ h2 {
  #projet article:hover {
 	 box-shadow: 0 1px 25px 8px rgba(0, 0, 0, 0.07);
 }
-
+ #about article:hover {
+	 box-shadow: 0 1px 25px 8px rgba(0, 0, 0, 0.07);
+}
 
 #projet article p {
 	font-weight: 300;
@@ -167,21 +175,23 @@ h2 {
 	padding: 30px;
 }
 
-
 .projet1  {
 	background: url(../img/test.png) no-repeat 94% -22% / 160px;
 }
 .projet2  {
-	background: url(../img/nl.png) no-repeat 94% -22% / 160px;
+	background: url(../img/cs.svg) no-repeat 94% 50% / 160px;
 }
 .projet3  {
-	background: url(../img/pelicoach.png) no-repeat 94% -22% / 160px;
+	background: url(../img/gestion.png) no-repeat 94% -22% / 160px;
 }
 .projet4  {
-	background: url(../img/ftno.svg) no-repeat 92% 50% / 100px;
+	background: url(../img/hoppark.jpg) no-repeat 92% -10% / 160px;
 }
 .projet5  {
-	background: url(../img/ftno.svg) no-repeat 92% 50% / 100px;
+	background: url(../img/designsystem.jpg) no-repeat 92% -10% / 160px;
+}
+.projet6  {
+	background: url(../img/speedseo.png) no-repeat 92% 40% / 110px;
 }
 
 /* TRAIT SEPARRATEUR */
@@ -206,7 +216,6 @@ h2 {
 #about {
     padding: 80px 20px 100px;
     margin: 0 auto;
-    /*background-color: #fafafafa;*/
     width: 100%;
 }
 
@@ -215,10 +224,15 @@ h2 {
 }
 
 #about h2 {
-	margin-top: 40px;
-	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 25px;
 	text-align: center;
+	font-size: 25px;
 }
+#about h2:nth-last-of-type(1) {
+	margin-top: 70px;
+}
+
 
 .conteneur {
 	display: flex;
@@ -230,14 +244,18 @@ h2 {
 }
 
 #about article {
-	width: 30%;
+	width: 29%;
 	margin: 0 auto;
-	min-height: 200px;
 	background-color: #ffffff;
 	box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
     transition: box-shadow 0.2s ease-in-out;
 }
+
+#about .exftno, #about .exsolocal {
+	width: 47%;
+}
+
 
 #about .description {
 	width: 100%;
@@ -287,7 +305,7 @@ h2 {
 .separateur {
     width: 25px;
     height: 2px;
-    margin: 175px auto;
+    margin: 115px auto;
     background-color: #3498db;
     border-radius: 1px;
 }
@@ -338,7 +356,7 @@ footer li a {
 	text-decoration: none;
 	color: #3498db;
 	padding-bottom: 10px;
-	font-size: 14px;
+	font-size: 18px;
 	border-bottom: 2px solid #ffffff;
 	transition: border 0.4s ease-in-out;
 }
@@ -357,26 +375,32 @@ footer li a:hover {
     #projet article {
         width: 100%;
     }
-    #projet .description {
-	width: 74%;
-	}
 
+    #projet .description {
+		width: 74%;
+	}
 
 	.conteneur {
-    display: flex;
-    flex-flow: column;
+    	display: flex;
+    	flex-flow: column;
 	}
+
 	#about article {
-    width: 90%;
-    min-height: 0px;
+    	width: 100%;
+    	min-height: 0px;
 	}
+
+	#about .exftno, #about .exsolocal {
+		width: 100%;
+	}
+
 	.separateur {
-    width: 2px;
-    height: 25px;
-    margin: 10px auto;
-    background-color: #3498db;
-    border-radius: 1px;
-}
+    	width: 2px;
+    	height: 25px;
+    	margin: 10px auto;
+    	background-color: #3498db;
+    	border-radius: 1px;
+	}
 	
 }
 
@@ -387,12 +411,12 @@ footer li a:hover {
 
 @media only screen and (max-width: 640px) {
     .logo {
-    	width: 20%;
+    	width: 15%;
     	text-align: center;
 	}
 
 	nav {
-		width: 80%;
+		width: 85%;
 	}
 	nav ul {
 		justify-content: space-around;
@@ -402,7 +426,8 @@ footer li a:hover {
 	}
 
     .title {
-		margin: 40px auto 0px;
+		margin: 0px auto 0px;
+		padding: 60px 0 0px;
     }
     .title h1 {
     	font-size: 25px;
@@ -419,22 +444,62 @@ footer li a:hover {
     }
 
     #projet {
-    	padding: 40px 20px 0px;
+    	padding: 20px 20px 100px;
     }
 
     #projet .description {
-	width: 100%;
-	min-height: 450px;
+		width: 100%;
+		min-height: 450px;
 	}
 	
-	.projet1, .projet2, .projet3, .projet4, .projet5 {
-		background-position :50% 230%;
+	.projet1 {
+		background-position :50% 190%;
+	}
+	.projet2 {
+		background-position :50% 77%;
+	}
+	.projet3 {
+		background-position :50% 220%;
+	}
+	.projet4 {
+		background-position :50% 220%;
+	}
+	.projet5 {
+		background-position :50% 210%;
+	}
+	.projet6 {
+		background-position :50% 77%;
 	}
 
 	#about article {
     width: 100%;
 	}
 
+}
+
+
+@media only screen and (max-width: 360px) {
+	.projet1 {
+		background-position :50% 260%;
+	}
+	.projet2 {
+		background-position :50% 90%;
+	}
+	.projet3 {
+		background-position :50% 262%;
+	}
+	.projet4 {
+		background-position :50% 260%;
+	}
+	.projet5 {
+		background-position :50% 250%;
+	}
+	.projet6 {
+		background-position :50% 92%;
+	}
+	nav li a {
+    font-size: 15px;
+	}
 }
 
 
