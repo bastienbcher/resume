@@ -53,6 +53,11 @@ header {
 .logo span {
 	font-size: 30px;
 	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.logo span img {
+	width: 35px;
 }
 
 .logo a { 	
