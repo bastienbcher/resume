@@ -53,11 +53,6 @@ header {
 .logo span {
 	font-size: 30px;
 	margin-right: 10px;
-	vertical-align: middle;
-}
-
-.logo span img {
-	width: 35px;
 }
 
 .logo a { 	
@@ -198,7 +193,12 @@ h2 {
 .projet6  {
 	background: url(../img/speedseo.png) no-repeat 92% 40% / 110px;
 }
-
+.projet7  {
+	background: url(../img/template1.png) no-repeat 94% -22% / 160px;
+}
+.projet8  {
+	background: url(../img/interactive.png) no-repeat 94% -22% / 160px;
+}
 /* TRAIT SEPARRATEUR */
 .trait {
     background-color: #ededed;
@@ -257,8 +257,8 @@ h2 {
     transition: box-shadow 0.2s ease-in-out;
 }
 
-#about .exftno, #about .exsolocal {
-	width: 47%;
+#about .excp, #about .exftno, #about .exsolocal {
+	width: 30%;
 }
 
 
@@ -395,7 +395,7 @@ footer li a:hover {
     	min-height: 0px;
 	}
 
-	#about .exftno, #about .exsolocal {
+	#about .excp, #about .exftno, #about .exsolocal {
 		width: 100%;
 	}
 
@@ -475,6 +475,12 @@ footer li a:hover {
 	.projet6 {
 		background-position :50% 77%;
 	}
+	.projet7 {
+		background-position :50% 210%;
+	}
+	.projet8 {
+		background-position :50% 170%;
+	}
 
 	#about article {
     width: 100%;
@@ -483,24 +489,30 @@ footer li a:hover {
 }
 
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
 	.projet1 {
-		background-position :50% 260%;
+		background-position :50% 220%;
 	}
 	.projet2 {
-		background-position :50% 90%;
+		background-position :50% 86%;
 	}
 	.projet3 {
-		background-position :50% 262%;
+		background-position :50% 230%;
 	}
 	.projet4 {
-		background-position :50% 260%;
+		background-position :50% 230%;
 	}
 	.projet5 {
 		background-position :50% 250%;
 	}
 	.projet6 {
-		background-position :50% 92%;
+		background-position :50% 82%;
+	}
+	.projet7 {
+		background-position :50% 250%;
+	}
+	.projet8 {
+		background-position :50% 190%;
 	}
 	nav li a {
     font-size: 15px;
@@ -509,5 +521,31 @@ footer li a:hover {
 
 
 
+@media only screen and (max-width: 340px) {
+	.projet1 {
+		background-position :50% 250%;
+	}
+	.projet2 {
+		background-position :50% 90%;
+	}
+	.projet3 {
+		background-position :50% 230%;
+	}
+	.projet4 {
+		background-position :50% 250%;
+	}
+	.projet5 {
+		background-position :50% 250%;
+	}
+	.projet6 {
+		background-position :50% 92%;
+	}
+	.projet7 {
+		background-position :50% 290%;
+	}
+	.projet8 {
+		background-position :50% 210%;
+	}
 
+}
 
