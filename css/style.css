@@ -100,7 +100,7 @@ nav li a:hover {
 /* SECTION 1 */
 .title {
 	width: 100%;
-    padding: 80px 0 0px;
+    padding: 40px 0 0px;
 }
 
 h1 {
@@ -120,6 +120,42 @@ h1 {
     transform: scaleX(-1);
 }
 
+
+
+.projetCS  {
+	width: 60%;
+	height:100%;
+	margin: 40px auto -20px;
+    display: flex;
+    flex-direction:row;
+    padding: 0!important;
+    background-color: #ffffff;
+	box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.projetCS .photo {
+	width: 20%;
+	margin: 0;
+}
+.projetCS img {
+	width: 100%;
+	height: 100%;
+	margin:0;
+	border-radius:10px 0px 0px 10px;
+	object-fit: cover;
+}
+.projetCS .description {
+	padding: 20px;
+}
+.projetCS .description p{
+	font-size: 16px;
+	line-height: 26px;
+	color: #34495e;
+}
+.projetCS:hover {
+	 box-shadow: 0 1px 25px 8px rgba(0, 0, 0, 0.07);
+}
 /* SECTION 2 CARD GRID */
 
 h2 {
@@ -377,6 +413,19 @@ footer li a:hover {
 /* MOBILE */
 
 @media only screen and (max-width: 1024px) {
+    .projetCS  {
+		width: 80%;
+		height:100%;
+		margin: 40px auto -20px;
+	    display: flex;
+	    flex-direction:row;
+	    padding: 0!important;
+	    background-color: #ffffff;
+		box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.07);
+	    border-radius: 10px;
+	    transition: box-shadow 0.2s ease-in-out;
+	}
+
     #projet article {
         width: 100%;
     }
@@ -432,7 +481,7 @@ footer li a:hover {
 
     .title {
 		margin: 0px auto 0px;
-		padding: 60px 0 0px;
+		padding: 40px 0 0px;
     }
     .title h1 {
     	font-size: 25px;
@@ -447,6 +496,24 @@ footer li a:hover {
     	line-height: 50px;
     	text-align: center;
     }
+     .projetCS  {
+		width: 80%;
+		height:100%;
+		margin: 40px auto -20px;
+	    display: flex;
+	    flex-direction:row;
+	    padding: 0!important;
+	    background-color: #ffffff;
+		box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.07);
+	    border-radius: 10px;
+	    transition: box-shadow 0.2s ease-in-out;
+	}
+	.projetCS .photo {
+		width: 100%;
+		margin: 0;
+	}
+
+
 
     #projet {
     	padding: 20px 20px 100px;
