@@ -123,7 +123,7 @@ h1 {
 
 
 .projetCS  {
-	width: 60%;
+	width: 70%;
 	height:100%;
 	margin: 40px auto -20px;
     display: flex;
@@ -147,6 +147,7 @@ h1 {
 }
 .projetCS .description {
 	padding: 20px;
+	padding-top: 0px;
 }
 .projetCS .description p{
 	font-size: 16px;
@@ -155,6 +156,15 @@ h1 {
 }
 .projetCS:hover {
 	 box-shadow: 0 1px 25px 8px rgba(0, 0, 0, 0.07);
+}
+
+.projetCS h2{
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+.projetCS p i {
+	line-height: 20px;
 }
 /* SECTION 2 CARD GRID */
 
